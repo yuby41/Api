@@ -15,4 +15,4 @@ use App\Http\Controllers\Api\v1\PostController;
 |
 */
 
-Route::apiResource('v1/posts', PostController::class);
+Route::apiResource('v1/posts', PostController::class)->only(['index', 'show', 'destroy']);
